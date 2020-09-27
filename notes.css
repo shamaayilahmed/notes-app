@@ -1,0 +1,92 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, auto))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  grid-auto-rows: minmax(15vw, auto);
+  background: rgba(53, 173, 137, 0.863);
+  font-family: 'Poppins', sans-serif;
+}
+
+.add {
+  cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.6rem 1rem;
+  background: rgba(230, 230, 12, 0.932);
+}
+
+.add i {
+  margin-right: 0.5rem;
+}
+
+.note {
+  margin: 30px;
+  margin-top: 60px;
+  background: white;
+  max-width: 450px;
+  height: 250px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
+}
+
+.note .tools {
+  background: rgba(230, 230, 21, 0.87);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+}
+
+.note .tools p {
+  font-size: 0.8rem;
+  margin: 0 10rem 0 0;
+}
+
+.note .tools button {
+  cursor: pointer;
+  color: #eb3636;
+  border: none;
+  background-color: transparent;
+  font-size: 1.1rem;
+  margin-left: 0.7rem;
+}
+
+.note .main {
+  background: #fff;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.note textarea {
+  font-family: inherit;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+
+.note .hidden {
+  display: none;
+}
+/*# sourceMappingURL=notes.css.map */
